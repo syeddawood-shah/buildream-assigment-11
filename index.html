@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUILDREAM - Build Your Dream</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#fff;box-shadow:0 2px 20px rgba(0,0,0,0.08);position:fixed;top:0;width:100%;z-index:1000}
+.logo{font-weight:800;font-size:26px;letter-spacing:1px} .logo span{color:#FF6B00}
+nav a{margin-left:30px;text-decoration:none;color:#111;font-weight:500;transition:0.3s} nav a:hover{color:#FF6B00}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab');background-size:cover;background-position:center;display:flex;align-items:center;padding:0 8%;color:#fff;padding-top:60px}
+.hero h1{font-size:62px;line-height:68px;font-weight:800} .hero h1 span{color:#FF6B00} .hero p{margin:20px 0 30px;max-width:550px;font-size:16px;color:#ddd;line-height:26px}
+.btn{background:#FF6B00;color:#fff;padding:14px 32px;border-radius:6px;text-decoration:none;font-weight:600;display:inline-block;transition:0.3s;border:2px solid #FF6B00} .btn:hover{background:transparent}
+.section{padding:80px 8%}
+.title{text-align:center;margin-bottom:50px} .title h2{font-size:38px} .title p{color:#777;margin-top:8px}
+.about{display:flex;gap:60px;align-items:center;background:#f9f9f9} .about img{width:48%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.15)} .about h2{font-size:36px;margin-bottom:15px} .about li{margin:8px 0;list-style:none}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{border-radius:14px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,0.08);background:#fff;transition:0.3s} .card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:220px;object-fit:cover} .card div{padding:22px}
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;background:#111;color:#fff;border-radius:16px;padding:50px}
+input,textarea{width:100%;padding:13px;margin-top:12px;border:1px solid #444;border-radius:8px;background:#222;color:#fff;outline:none}
+input:focus,textarea:focus{border-color:#FF6B00}
+footer{background:#000;color:#aaa;text-align:center;padding:25px;margin-top:0}
+@media(max-width:900px){.about,.contact-wrap,.grid{grid-template-columns:1fr;flex-direction:column}.about img{width:100%}.hero h1{font-size:38px;line-height:44px}nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">BUILD<span>REAM</span></div>
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+<div class="hero" id="home">
+<div>
+<h1>We Build Your<br><span>Dream House</span></h1>
+<p>BUILDREAM is a premium construction company providing high-quality building, architecture & interior solutions since 2015.</p>
+<a href="#services" class="btn">Explore Services</a>
+</div>
+</div>
+<div class="section about" id="about">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd">
+<div>
+<h2>About BUILDREAM</h2>
+<p style="color:#555;line-height:27px;">BUILDREAM was founded with a vision to turn dreams into reality. We have completed 500+ residential and commercial projects across Pakistan with 100% client satisfaction.</p><br>
+<ul>
+<li>✔ 10+ Years of Experience</li>
+<li>✔ Team of Certified Engineers & Architects</li>
+<li>✔ Affordable & Luxury Construction</li>
+<li>✔ On-Time Delivery & Quality Assurance</li>
+</ul><br>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+</div>
+<div class="section" id="services">
+<div class="title"><h2>Our Premium Services</h2><p>What we build for you</p></div>
+<div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f6"><div><h3>Residential Building</h3><p style="color:#666;margin-top:8px;font-size:14px;">Modern house construction with best quality cement, steel and finishing.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c"><div><h3>Commercial Complex</h3><p style="color:#666;margin-top:8px;font-size:14px;">Offices, plazas, and malls — built for business growth.</p></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"><div><h3>Interior & Exterior</h3><p style="color:#666;margin-top:8px;font-size:14px;">Luxury interior design that makes your house a home.</p></div></div>
+</div>
+</div>
+<div class="section" id="contact">
+<div class="title"><h2>Get In Touch</h2><p>Let's build your dream together</p></div>
+<div class="contact-wrap">
+<div>
+<h2 style="color:#FF6B00;">Contact Info</h2><br>
+<p>📍 Address: Main Shahrah-e-Faisal, Karachi, Pakistan</p><br>
+<p>📞 Phone: +92 300 1234567</p><br>
+<p>✉️ Email: info@buildream.com</p><br>
+<p>🕘 Working Hours: Mon - Sat (9AM - 7PM)</p>
+</div>
+<div>
+<input type="text" placeholder="Your Full Name">
+<input type="email" placeholder="Your Email Address">
+<textarea rows="4" placeholder="Your Project Details"></textarea>
+<button class="btn" style="width:100%;margin-top:12px;cursor:pointer;">Send Message</button>
+</div>
+</div>
+</div>
+
+<footer>© 2026 BUILDREAM | Designed by Student for Saylani Assignment | All Rights Reserved</footer>
+
+</body>
+</html>
